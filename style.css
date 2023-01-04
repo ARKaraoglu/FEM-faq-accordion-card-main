@@ -1,0 +1,16 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.image-container {
+    max-width: 20em;
+}
