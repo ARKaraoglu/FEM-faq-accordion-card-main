@@ -9,6 +9,8 @@ body {
     display: grid;
     align-items: center;
     margin: 0;
+
+    font-size: 12px;
 }
 .sr-only {
     display: none;
@@ -21,11 +23,18 @@ body {
     max-height: 40em;
     background-color: white;
     overflow: hidden;
+
+    gap: 1rem;
 }
 .image-container {
     height: 100%;
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.illustration-woman-online-desktop {
+    position: absolute;
 }
 .bg-pattern-desktop {
     max-width: 40rem;
@@ -34,4 +43,13 @@ body {
 .illustration-box-desktop {
     max-width: 40rem;
     max-height: 40rem;
+}
+
+.faq {
+    border-bottom: 0.1rem solid hsl(240, 5%, 91%);
+}
+
+.faq-question-container {
+    display: flex;
+    justify-content: space-between;
 }
