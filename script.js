@@ -1,15 +1,12 @@
 const allFaqElements = document.querySelectorAll(".faq-question-container");
 
-console.log(allFaqElements);
+const allPElements = document.querySelectorAll(".p");
 
-allFaqElements.addEventListener("click", function (e) {
-    const clickedFaq = e.target.closest(".allFaqElements");
+for (let x = 0; x < allFaqElements.length; x++) {
+    allFaqElements[x].addEventListener("click", function () {
+        console.log(allFaqElements[x]);
+        console.log(allPElements[x].textContent);
 
-    if (!clickedFaq) {
-        return;
-    }
-
-    console.log(clickedFaq);
-});
-
-// allFaqElements.addEventListener;
+        allPElements[x].classList.toggle("display-none");
+    });
+}
