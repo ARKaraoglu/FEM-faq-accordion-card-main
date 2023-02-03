@@ -12,7 +12,14 @@
             href="./images/favicon-32x32.png"
         />
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <script defer src="script.js"></script>
+        <script defer type="text/javascript" src="script.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
 
         <title>Frontend Mentor | FAQ Accordion Card</title>
 
@@ -30,7 +37,7 @@
     <body>
         <main>
             <div class="sr-only">
-                <h1>FAQ</h1>
+                <h1 class="h1">FAQ</h1>
             </div>
             <div class="container">
                 <div class="image-container">
@@ -66,11 +73,11 @@
                             </div>
                         </div>
 
-                        <div class="faq-answer faq-one-answer">
+                        <p class="p faq-answer faq-one-answer display-none">
                             You can invite up to 2 additional users on the Free
                             plan. There is no limit on team members for the
                             Premium plan.
-                        </div>
+                        </p>
                     </div>
 
                     <div class="faq faq-two">
@@ -87,10 +94,10 @@
                             </div>
                         </div>
 
-                        <div class="faq-answer faq-two-answer">
+                        <p class="p faq-answer faq-two-answer display-none">
                             No more than 2GB. All files in your account must fit
                             your allotted storage space.
-                        </div>
+                        </p>
                     </div>
 
                     <div class="faq faq-three">
@@ -106,11 +113,11 @@
                                 />
                             </div>
                         </div>
-                        <div class="faq-answer faq-three-answer">
+                        <p class="p faq-answer faq-three-answer display-none">
                             Click “Forgot password” from the login page or
                             “Change password” from your profile page. A reset
                             link will be emailed to you.
-                        </div>
+                        </p>
                     </div>
 
                     <div class="faq faq-four">
@@ -126,10 +133,10 @@
                                 />
                             </div>
                         </div>
-                        <div class="faq-answer faq-four-answer">
+                        <p class="p faq-answer faq-four-answer display-none">
                             Yes! Send us a message and we'll process your
                             request no questions asked.
-                        </div>
+                        </p>
                     </div>
 
                     <div class="faq faq-five">
@@ -145,10 +152,10 @@
                                 />
                             </div>
                         </div>
-                        <div class="faq-answer faq-five-answer">
+                        <p class="p faq-answer faq-five-answer display-none">
                             Chat and email support is available 24/7. Phone
                             lines are open during normal business hours.
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
