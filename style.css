@@ -20,12 +20,16 @@ body {
     grid-template-columns: 1fr 1fr;
     margin-inline: auto;
     max-width: 70rem;
-    max-height: 30rem;
+    min-height: 30rem;
     background-color: white;
 
     gap: 1rem;
 }
 .image-container {
+    display: grid;
+    align-items: center;
+}
+.image-container__extra-container {
     height: 100%;
     display: flex;
     align-items: center;
@@ -44,7 +48,7 @@ body {
 .illustration-box-desktop {
     position: absolute;
     z-index: 1;
-    transform: translateX(4.2rem) translateY(12rem);
+    transform: translateX(-5.8rem) translateY(-2.5rem);
 }
 
 .faq {
@@ -86,12 +90,21 @@ body {
     font-size: 0.75rem; /* 12px */
     color: hsl(240, 6%, 50%);
     font-weight: 400;
+}
 
-    /* transform: ; */
-    transition: ease-in-out 0.2s;
-}
-@-webkit-keyframes appear {
-}
 .display-none {
     display: none;
+}
+
+/* To make sure the orange box does not overflow from the screen */
+@media (max-width: 1210px) {
+    main {
+        width: 90%;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 950px) {
+    main {
+    }
 }
