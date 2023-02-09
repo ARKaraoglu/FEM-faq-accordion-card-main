@@ -12,6 +12,7 @@ body {
 
     font-family: "Kumbh Sans", sans-serif;
 }
+
 .sr-only {
     display: none;
 }
@@ -24,6 +25,7 @@ body {
     background-color: white;
 
     gap: 1rem;
+    border-radius: 1rem;
 }
 .image-container {
     display: grid;
@@ -49,6 +51,10 @@ body {
     position: absolute;
     z-index: 1;
     transform: translateX(-5.8rem) translateY(-2.5rem);
+}
+
+.mobile-image {
+    display: none;
 }
 
 .faq {
@@ -92,8 +98,21 @@ body {
     font-weight: 400;
 }
 
+.arrow-twist {
+    transform: scaleY(-1);
+}
+
 .display-none {
     display: none;
+}
+
+/* TranslateY causes issues in firefox. That is why I wrote code specific for firefox */
+@-moz-document url-prefix() {
+    .illustration-box-desktop {
+        position: absolute;
+        z-index: 1;
+        transform: translateX(-5.8rem) translateY(3.15rem);
+    }
 }
 
 /* To make sure the orange box does not overflow from the screen */
@@ -106,5 +125,41 @@ body {
 
 @media (max-width: 950px) {
     main {
+        width: 100%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 2em;
+    }
+    .image-container {
+        display: grid;
+        justify-content: center;
+    }
+    .illustration-woman-online-desktop {
+        display: none;
+    }
+    .bg-pattern-desktop {
+        display: none;
+    }
+    .illustration-box-desktop {
+        display: none;
+    }
+    .mobile-image {
+        display: block;
+        position: absolute;
+
+        width: 15rem;
+
+        transform: translateY(5);
+    }
+
+    .faq-container {
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    .faq-h1 {
+        text-align: center;
     }
 }
