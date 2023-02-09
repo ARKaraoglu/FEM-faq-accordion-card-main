@@ -53,7 +53,7 @@ body {
     transform: translateX(-5.8rem) translateY(-2.5rem);
 }
 
-.mobile-image {
+.mobile-image-container {
     display: none;
 }
 
@@ -145,13 +145,17 @@ body {
     .illustration-box-desktop {
         display: none;
     }
+    .mobile-image-container {
+        display: flex;
+        justify-content: center;
+    }
     .mobile-image {
         display: block;
         position: absolute;
 
         width: 15rem;
 
-        transform: translateY(5);
+        transform: translateY(-9rem);
     }
 
     .faq-container {
