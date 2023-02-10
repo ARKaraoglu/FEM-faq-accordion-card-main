@@ -56,6 +56,10 @@ Users should be able to:
 -   There is not much left to do other than fix the Desktop Orange box
     position issue in Google Chrome!
 
+-   I will add Gradient to the background color
+
+-   I will add Shadow to the card
+
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ## Author
