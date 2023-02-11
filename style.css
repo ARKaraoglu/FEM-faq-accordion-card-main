@@ -5,7 +5,7 @@ html {
 
 body {
     height: 100vh;
-    background-color: hsl(273, 75%, 66%);
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     display: grid;
     align-items: center;
     margin: 0;
@@ -23,6 +23,7 @@ body {
     max-width: 70rem;
     min-height: 30rem;
     background-color: white;
+    box-shadow: 0 1.2rem 2rem rgba(0, 0, 0, 0.3);
 
     gap: 1rem;
     border-radius: 1rem;
@@ -114,10 +115,11 @@ body {
 
 .attribution a {
     text-decoration: none;
+    color: lightblue;
 }
 .attribution a:hover {
     transition: 0.5s;
-    color: yellow;
+    color: red;
 }
 
 /* TranslateY causes issues in firefox. That is why I wrote code specific for firefox */
