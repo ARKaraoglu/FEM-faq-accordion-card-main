@@ -21,7 +21,7 @@ body {
     grid-template-columns: 1fr 1fr;
     margin-inline: auto;
     max-width: 60rem;
-    min-height: 35rem;
+    min-height: 32rem;
     background-color: white;
     box-shadow: 0 1.2rem 2rem rgba(0, 0, 0, 0.3);
 
